@@ -1,0 +1,21 @@
+body { /*the css makes the whole page black with white Arial text(like decorating the foil that is wrapped around the sandwich,black, with arial handwritting text that is white ink.)*/
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+h1 { /*this makes all big headings(h1) appear in grey Verdana font(like writing the title on the sandwich foil(Dus' sandwich) written in grey ink and the font is Verdana, so that it can stand out more clearly).*/
+    color: black;
+    font-family: Verdana, sans-serif;
+}
+
+.maindiv { /*this makes a neat white box with rounded corners, centered black text and some padding inside(like putting your sandwich(html) intoa white lunchbox(css) as acoat of design that is visible. */
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    margin: auto;
+}
+

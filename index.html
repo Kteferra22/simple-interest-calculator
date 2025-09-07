@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!--establishes and tells the browser what type of document its looking at (like a blueprint label on a house design, basically telling the browser to use modern tools to build this house)(top bread) -->
+<html> <!--marks the root element of the webpage(like the outer box that holds the entire webpage)-->
+    <head> <!--container for metadata/data about the webpage(like the backstage area of a theater, the audience can't see it directly, but is were all the setup, instructions, and rescourses are prepared so the show(the body/the content) works right)-->
+        <title>Simple Interest Calculator</title> <!--this title will show up on the browser search(like a label on the front door) -->
+    <script src="script.js"></script> <!--loads and executes javascript file into html document(like connecting the house(html) to the wiring system(javascript)so that their is interactivity)-->
+    <link rel="stylesheet" href="style.css"> <!-- this file is a style sheet and here is the the file to execute to style the webpage(like dressing the page to look nice)-->
+    </head> <!--end of the structure set up(like closing up the sandwich and onto the filling of the sandwich)-->
+    <body> <!--start of the visible content of the webpage, everything you put inside the body, the user sees and interacts with(like the filling of the sandwich)  -->
+        <div> <!--container used to group elements to manage and style(like a cardboard box moving things into the house for a specific room)-->
+            <h1>Simple Interest Calculator</h1> <!--the main title of the page, making it big and bold by default(like the title of the book)-->
+
+            Amount: <input type="number"  id="principal"><br/> <!--creates a number only text box called principal so that JavaScript can find it by its tag name(like filling out a bank form and bank clerk puts instructions on it for when the form gets processed)-->
+
+            Interest Rate: <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25" oninput="updateRate()"><br/> <!--creates a number slider bar with parameters(like music in a car, turn all the way down to 1, up to 20, starting at volume 10.25, and can decrease or increase at increments of .25)-->
+            <span id="rate_val">10.25</span> % <br/><br/>
+
+            No. of Years: <input type="number"  id="years" list="all_years"> <!--creates a number only text box called years that includes list option(like going to a drink vending machine and having the option to chose any drink you want, but seeing at the start of order a list of recommended popular choices)--> 
+                <datalist id="all_years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </datalist> <!--creates a list of suggested numbers the user can choose from(like going to the drink machine and seeing what to choose from but seeing the top popular drinks to chose from)-->
+
+            <button onclick="compute()">Compute</button> <!--this creates a button that when clicked, runs the JS function "compute()" to calculate the result(like the start cooking button on the sandwich machine, the ingredients are present and the machine(JS) combines everything and makes the sandwich(calculates the interest))-->
+            
+            <p id="result"></p>
+
+            <p> This Calculator belongs to Kidus Teferra </p>
+        
+        </div> <!--closes the conatiner that was started with <div>(like closing the container lid thats holding all the ingredients for the sandwich)-->
+    </body> <!--closes the section that holds everything visible on the web page(like saying "the sandwich is complete, nothing else goes on the plate.")-->
+</html> <!--marks the end of the entire html document(like sealing/wrapping the foil shut syaing "the sanwich is ready to eat!")-->

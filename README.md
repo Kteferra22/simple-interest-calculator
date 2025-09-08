@@ -11,7 +11,7 @@ Built with **HTML, CSS, and JavaScript**.
 ---
 
 ## 📸 Screenshot
-![App Screenshot](screenshot.png)
+![App Screenshot](Screenshot 2025-09-07.png)
 
 ---
 

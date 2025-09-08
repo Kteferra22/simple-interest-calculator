@@ -10,11 +10,6 @@ Built with **HTML, CSS, and JavaScript**.
 
 ---
 
-## 📸 Screenshot
-![App Screenshot](images/screenshot.png)
-
----
-
 ## ✨ Features
 - Enter investment amount, interest rate, and time period
 - Real-time interest rate slider updates
